@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset ="utf-8">
+    <title>
+      change html content
+    </title>
+    <style>
+      .bluebox{
+        background-color: #3A5795;
+		color: white;
+		height: 100px;
+		width:auto;
+	  }
+	  .yellowbox{
+		background-color: rgb(222, 224, 85);
+		height: 100px;
+		width: auto;
+	  }
+	  .greenbox{
+		background-color: #31af37;
+		height: 100px;
+		width: auto;
+	  }
+	  .great{
+		background-color: #5a3479;
+		
+	  }
+	</style>
+  </head>
+  
+  <body>
+    <div class="bluebox" id="facebook">
+      <p>
+        Facebook is 
+        <span class="great">
+          great
+        </span>
+        
+      </p>
+      
+    </div>
+    <div class="yellowbox" id="apple">
+      <p>
+        Apple.
+      </p>
+      
+    </div>
+    <div class="greenbox" id="Microsoft">
+      <p>
+        Microsoft.
+      </p>
+      
+    </div>
+<button id="facebookButton" style="height: 100px;">Change Facebook content</button>
+<button id="microsoftButton" style="height: 100px;">Change Microsoft Content</button>
+<button id="appleButton" style="height: 100px;">Change Apple content</button>
+<script type="text/javascript">
+	
+	// user innerHTML to change the content of div
+	// c is small letter in  onclick methood
+	// how to style our container usin js
+
+	document.getElementById('facebookButton').onclick = function(){
+		document.getElementById('facebook').style.width = "150px";
+	}
+</script>
+  </body>
+  
+  
+</html>
